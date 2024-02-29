@@ -727,6 +727,7 @@ config = {
 
 	fetchRepoFile: function(path, successCbk, failCbk) {
 		var repos = [
+			"https://raw.githubusercontent.com/CinHo8/SkyAutoPlayerScript/master/" + path,
 			"http://81.70.194.140:8090/StageGuard/SkyAutoPlayerScript/raw/branch/master/" + path,
 			"https://cdn.jsdelivr.net/gh/StageGuard/SkyAutoPlayerScript@" + config.values.gitVersion + "/" + path,
 			"https://dl.skyautoplayerscript.stageguard.top/" + path,
