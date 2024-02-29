@@ -642,7 +642,7 @@ config = {
 		return v;
 	},
 	
-	checkVersion: function() {
+/*	checkVersion: function() {
 		this.values.gitVersion = http.get("http://81.70.194.140:8090/StageGuard/SkyAutoPlayerScript/raw/branch/master/gitVersion").body.string();
 		var periodVersion = this._global_storage.get("version", this.values.currentVersion);
 		var currentVersion = this.values.currentVersion;
@@ -659,7 +659,7 @@ config = {
 			});
 		}
 		this.save("version", currentVersion);
-	},
+	}, */
 	
 	fetchResources: function(listener) {
 		var resourceList = ["local.png", "online.png", "play.png", "pause.png", "refresh.png", "settings.png", "info.png", "download.png", "bin.png", "speedup.png", "search.png", "note.png", "user.png", "piano.png", "clock.png"/*, "filter.png"*/, "coolapk.png", "douyin.png", "github.png", "twitter.png", "bilibili.png", "mail.png"];
